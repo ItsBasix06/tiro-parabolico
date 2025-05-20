@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <H1>Hola basi</H1>
+     <div id="calculator-container">
+        <h1>Calculadora de Tiro Parabólico</h1>
+        <form id="tiroParabolicoForm">
+            <label for="velocidadInicial">Velocidad Inicial (v₀) en m/s:</label>
+            <input type="number" id="velocidadInicial" name="velocidadInicial" required>
+            <label for="anguloLanzamiento">Ángulo de Lanzamiento (θ) en grados:</label>
+            <input type="number" id="anguloLanzamiento" name="anguloLanzamiento" required>
+            <button type="submit">Calcular Alcance</button>
+        </form>
+        <div id="error-message"></div>
+        <div id="resultado"></div>
+    </div>
+    
 </body>
 </html>
